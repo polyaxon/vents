@@ -6,7 +6,7 @@ from vents.providers.gcp.service import GCPService
 
 
 class GCSFileSystem(BaseGCSFileSystem):
-    retries = 5
+    retries = 3
 
     async def set_session(self):
         return await self._set_session()
